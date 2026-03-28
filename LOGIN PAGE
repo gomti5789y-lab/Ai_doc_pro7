@@ -1,0 +1,3 @@
+// login.js
+axios.post("/api/auth/login", { email, password })
+.then(res => localStorage.setItem("token", res.data.token));
